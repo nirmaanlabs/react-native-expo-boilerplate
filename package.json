@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typescheck": "tsc -p tsconfig.json",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "expo": "~48.0.10",
