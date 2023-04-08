@@ -5,22 +5,21 @@ on:
       - develop
       - feature/*
       - hotfix/*
-      
+
 jobs:
   pr-checks:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
         uses: actions/checkout@v3
-      - name: setup-node  
+      - name: setup-node
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
           cache: npm
       - name: Install dependencies
-          run: npm ci    
+        run: npm ci
       - name: Lint Checks
         run: npm run lint
       - name: Type checks
         run: npm run typecheck
-      
