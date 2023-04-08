@@ -18,7 +18,7 @@ jobs:
           node-version: 18.x
           cache: npm
       - name: Lint Checks
-        run: npm lint
+        run: npm run lint
       - name: Type checks
-        run: npm typecheck
+        run: npm run typecheck
       
