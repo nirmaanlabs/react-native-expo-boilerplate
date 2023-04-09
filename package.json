@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "typecheck": "tsc -p tsconfig.json",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "jest"
+    "unit:tests": "jest"
   },
   "dependencies": {
     "expo": "~48.0.10",
