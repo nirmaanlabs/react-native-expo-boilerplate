@@ -9,7 +9,7 @@ const file = readFileSync(
   "utf8"
 );
 
-writeFileSync(path.join(__dirname, "./.reassure/output.md"), file);
+writeFileSync(path.join(__dirname, "./.reassure/output.md"), "file");
 
 dangerReassure({
   inputFilePath: path.join(__dirname, "./.reassure/output.md"),
