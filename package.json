@@ -7,7 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "typescheck": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "@babel/core": "^7.20.0",
     "@types/react": "~18.0.14",
     "eslint-config-universe": "^11.2.0",
+    "prettier": "^2.8.7",
     "typescript": "^4.9.4"
   },
   "eslintConfig": {
