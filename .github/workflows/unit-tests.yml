@@ -1,0 +1,23 @@
+name: Unit-Tests
+on:
+  push:
+    branches:
+      - develop
+      - feature/*
+      - hotfix/*
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v3
+      - name: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: npm
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint Checks
+        run: npm run unit:tests
