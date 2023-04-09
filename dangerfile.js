@@ -5,10 +5,7 @@ import { dangerReassure } from "reassure";
 
 const path = require("path");
 
-const file = readFileSync(
-  path.join(__dirname, "./.reassure/current.perf"),
-  "utf8"
-);
+readFileSync(path.join(__dirname, "./.reassure/current.perf"), "utf8");
 
 message("Changed Files in this PR: \n - ");
 
