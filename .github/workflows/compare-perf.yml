@@ -1,4 +1,4 @@
-name: Performance Tests
+name: Compare Performance Tests
 on:
   push:
     branches:
@@ -23,4 +23,4 @@ jobs:
         run: ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: npm danger ci
+        run: npm run danger ci
