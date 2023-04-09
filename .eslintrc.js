@@ -2,7 +2,7 @@ module.exports = {
   extends: "universe/native",
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
+      files: ["*.ts", "*.tsx", "*.js"],
       rules: {
         quotes: ["error", "double", { avoidEscape: true }],
         "no-unused-vars": "error",
