@@ -10,7 +10,7 @@
     "typecheck": "tsc -p tsconfig.json",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test:unit": "jest",
-    "test:perf": "cd reassure && ./reassure-tests.sh"
+    "test:perf": "reassure"
   },
   "dependencies": {
     "expo": "~48.0.10",
