@@ -1,4 +1,4 @@
-name: Unit-Tests
+name: Performance Tests
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
       - hotfix/*
 
 jobs:
-  unit-tests:
+  pr-checks:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
@@ -19,5 +19,8 @@ jobs:
           cache: npm
       - name: Install Dependencies
         run: npm ci
-      - name: Run unit test
-        run: npm run test:unit
+      - name: Performance Tests
+        run: ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: npm danger ci
