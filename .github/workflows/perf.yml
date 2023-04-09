@@ -20,7 +20,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Performance Tests
-        run: cd reassure && ./reassure-tests.sh
+        run: ./reassure-tests.sh
 
       - name: Run Danger.js
         run: npm danger ci

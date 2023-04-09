@@ -10,10 +10,10 @@ git fetch origin
 git switch "$BASELINE_BRANCH"
 
 npm install --force
-npx reassure --baseline
+npm reassure --baseline
 
 # Gather current perf measurements & compare results
 git switch --detach -
 
 npm install --force
-npx reassure --branch
+npm reassure --branch
