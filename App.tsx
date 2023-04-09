@@ -2,8 +2,6 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { StatusBar } from "expo-status-bar";
 
-// dfas
-
 export const App = () => {
   return (
     <View style={styles.container}>
