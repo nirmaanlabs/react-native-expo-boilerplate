@@ -24,3 +24,5 @@ jobs:
 
       - name: Run Danger.js
         run: npx danger ci
+        env:
+        GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
