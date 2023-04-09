@@ -23,4 +23,4 @@ jobs:
         run: npm run test:perf
 
       - name: Run Danger.js
-        run: npm run danger ci
+        run: npx danger ci
