@@ -1,11 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { danger, message } from "danger";
+import { readFileSync, writeFileSync } from "fs";
 import { dangerReassure } from "reassure";
 
 const path = require("path");
 
-const modifiedMD = danger.git.modified_files.join("- ");
-message("Changed Files in this PR: \n - " + modifiedMD);
+const file = readFileSync(
+  path.join(__dirname, "./.reassure/current.perf"),
+  "utf8"
+);
+
+writeFileSync(path.join(__dirname, "./.reassure/output.md"), file);
 
 dangerReassure({
   inputFilePath: path.join(__dirname, "./.reassure/output.md"),
