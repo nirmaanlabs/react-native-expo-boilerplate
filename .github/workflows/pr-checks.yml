@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: 18.x
           cache: npm
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
       - name: Lint Checks
         run: npm run lint
-      - name: Type checks
+      - name: Type Checks
         run: npm run typecheck
