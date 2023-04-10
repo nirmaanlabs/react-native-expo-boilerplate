@@ -8,6 +8,7 @@ const path = require("path");
 readFileSync(path.join(__dirname, "./.reassure/current.perf"), "utf8");
 
 fail("Changed Files in this PR: \n - ");
+message("Test");
 
 // writeFileSync(path.join(__dirname, "./.reassure/output.md"), "file");
 
