@@ -6,7 +6,10 @@ on:
       - feature/*
       - hotfix/*
   pull_request:
-    branches: ["**"]
+    branches:
+      - develop
+      - feature/*
+      - hotfix/*
 
 jobs:
   perf-tests:
@@ -25,6 +28,6 @@ jobs:
         run: npm run test:perf
 
       - name: Run Danger.js
-        run: DEBUG="*" npx danger ci
+        run: npx danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
