@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar";
 export const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Power of self learning !!!!!!!</Text>
+      <Text>Power of self learning</Text>
       <StatusBar style="auto" />
     </View>
   );
