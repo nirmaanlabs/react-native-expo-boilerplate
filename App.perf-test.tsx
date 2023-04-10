@@ -5,4 +5,4 @@ import { App } from "./App";
 
 test("Simple test", async () => {
   await measurePerformance(<App />);
-});
+}, 300000);

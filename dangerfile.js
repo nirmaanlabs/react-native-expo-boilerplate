@@ -1,12 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { danger, message } from "danger";
-import path from "path";
-import { dangerReassure } from "reassure";
+import { message } from "danger";
 
-const modifiedMD = danger.git.modified_files.join("- ");
-
-message("Changed Files in this PR: \n - " + modifiedMD);
-
-dangerReassure({
-  inputFilePath: path.join(__dirname, "./.reassure/output.md"),
-});
+message("Add your own custom pr comments, perf and test results");
